@@ -1,0 +1,77 @@
+# --- Сторонние SDK (ставятся локально, см. docs/versions.md) ---
+TensorRT-*/
+
+# --- Модели и собранные движки (получаются скриптами) ---
+models/*
+!models/README.md
+!models/*.py
+!models/*.ps1
+!models/*.sh
+*.onnx
+*.engine
+*.plan
+*.trt
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+
+# --- Данные ---
+data/external/
+python/third_party/
+data/videos/*
+!data/videos/README.md
+data/annotations/**/*.zip
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# --- Python / uv ---
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.ruff_cache/
+.pytest_cache/
+*.egg-info/
+
+# --- C++ / CMake / Visual Studio ---
+cpp/build/
+build/
+out/
+.vs/
+CMakeUserPresets.json
+*.user
+*.obj
+*.pdb
+*.ilk
+*.exe
+*.dll
+*.lib
+
+# --- Эксперименты ---
+runs/
+mlruns/
+wandb/
+*.log
+
+# --- Секреты ---
+.env
+*.key
+credentials*
+secrets/
+
+# --- ОС / редакторы ---
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# Локальные материалы
+/readme_for_me.md
+/AGENTS.md
+/PLAN.md
+/docs/
+/reports/
